@@ -1,0 +1,38 @@
+page-home {
+    
+        .login-title{
+            font-family: Ariel_Insular;
+            color: white;
+            font-size: 6em;
+        }
+    
+        .login-main{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    
+        .login-form{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .login-bg{
+            background-image: url("../../assets/imgs/depositphotos_80848882-stock-illustration-abstract-future-concept-vector-futuristic.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .text-input-wp{
+            border-color: white;
+        }
+        
+        .no-scroll .scroll-content{
+            overflow: hidden;
+        }
+    
+    
+}

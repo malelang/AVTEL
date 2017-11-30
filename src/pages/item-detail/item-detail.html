@@ -1,0 +1,40 @@
+<ion-header>
+    
+      <ion-navbar color="secondary">
+        <ion-title></ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content>
+      
+    <ion-row>
+      <div class="item-profile">
+        <img src="{{item.imagen}}" alt="">
+      </div>
+    </ion-row>
+    <ion-row>
+      <div class="item-detail" padding>
+        <h2 class="perfil-title">{{item.nombre}}</h2>
+        <br>
+        <p>{{item.descripcion}}</p>
+        <br>
+        <p>Disponibles: {{item.cantidad}}</p>
+        <br>
+        <p>Componentes: {{item.componentes}}</p>
+      </div>
+      </ion-row>
+    <ion-footer no-shadow color="glass">
+      <ion-toolbar position="bottom" color="glass">
+      
+      <button ion-col col-5 offset-6 round color="secondary" ion-button *ngIf="item.cantidad > 0" (click)="goToPedir(item)">Prestar Item</button>
+    
+      
+      <p ion-col col-9 offset-2 *ngIf="item.cantidad==0">No hay existencias disponibles en este momento, borre el pedido o espere hasta que devuelvan las existencias</p>
+      
+    </ion-toolbar>
+  </ion-footer>
+    
+
+    </ion-content>

@@ -1,0 +1,29 @@
+<ion-content padding class="login-bg no-scroll">
+  <form #form="ngForm">
+    <div class="login-main">
+
+      <h1 class="login-title" text-center>AVTEL</h1>
+      <div class="login-form">
+        <ion-row style="position:fixed; bottom:200px; right:30px; left:30px">
+          <ion-col col-12 col-md-6 offset-md-2 col-lg-4 offset-lg-4>
+            <ion-item color="glass">
+              <ion-label fixed color="light">Usuario</ion-label>
+              <ion-input name="nombre" type="text" [(ngModel)]="usuario" required></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12 col-md-6 offset-md-2 col-lg-4 offset-lg-4 margin-top>
+            <ion-item color="glass">
+              <ion-label fixed color="light">Contraseña</ion-label>
+              <ion-input name="contraseña" type="password" [(ngModel)]="password" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-footer no-shadow color="glass">
+        <ion-toolbar position="bottom" color="glass">
+          <button ion-col col-5 offset-4 col-md-2 col-lg-2 ion-button color="primary" round (click)="login()" [disabled]="!form.valid">Entrar</button>
+        </ion-toolbar>
+      </ion-footer>
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Objetos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="perfil-bg">
+  <p>Los siguientes son los objetos disponibles en el inventario:</p>
+  <ion-list>
+      
+        <button ion-item *ngFor="let item of objDisponibles" (click)="openItem(item)">
+          <ion-avatar item-left>
+            <img [src]="item.imagen" />
+          </ion-avatar>
+          <h2>{{item.nombre}}</h2>
+          <p>{{item.descripcion}}</p>
+        </button>
+ 
+    </ion-list>
+
+</ion-content>

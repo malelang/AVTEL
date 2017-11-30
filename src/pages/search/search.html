@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Busqueda...</ion-title>
+  </ion-navbar>
+
+</ion-header>
+  
+
+<ion-content padding>
+    <p>Seleccione la persona que hace el encargo</p>
+    <form #form="ngForm">
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list radio-group [(ngModel)]="nombre" name="nombre" required>
+      <ion-item *ngFor="let o of owners">
+          <ion-label color="dark">{{o}}</ion-label>
+          <ion-radio value={{o}}></ion-radio>
+      </ion-item>
+    </ion-list>
+  
+  <ion-row>
+      <button col-4 offset-7 ion-button color="danger" block (click)="prestar()" [disabled]="!form.valid">CONTINUAR</button>
+    </ion-row>
+  </form>
+</ion-content>

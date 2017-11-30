@@ -1,0 +1,65 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Principal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+  
+
+<ion-content padding class="perfil-bg">
+
+  <p>Bienvenido, usuario administrador</p>
+
+  <ion-row >
+    <ion-col col-6 offset-1 col-md-4 offset-md-2 col-lg-4 offset-lg-3>
+      <div class="marco">
+        <ion-card>
+          <img src="  http://demo.solwininfotech.com/wordpress/veriyas-pro/wp-content/uploads/2016/05/John-Doe.jpg" alt="">
+        </ion-card>
+      </div>
+    </ion-col>
+    <ion-col col-5 col-md-4 offset-md-1 col-lg-3 offset-lg-1>
+      <h3 class="perfil-title"> Carlos Alegría</h3>
+      <ion-icon name="analytics"> Administrador </ion-icon>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-card>
+      <ion-icon name="alert" color="danger"></ion-icon>
+      <p>Recuerda revisar los implementos de laboratorio antes de comenzar la jornada</p>
+    </ion-card>
+    <br>
+    <ion-card>
+      <ion-icon name="alert" color="danger"></ion-icon>
+      <p>El salón 326 está ocupado hoy con la clase: Enfasis 1 Tm</p>
+    </ion-card>
+    <br>
+    <ion-card>
+      <ion-icon name="alert" color="danger"></ion-icon>
+      <p>El salón 334 está ocupado hoy con la clase: Desarrollo de Aplicaciones Móviles</p>
+    </ion-card>
+    <br>
+    <ion-card>
+      <ion-icon name="alert" color="danger"></ion-icon>
+      <p>El salón 328 está ocupado con la clase: Metodología de la investigación</p>
+    </ion-card>
+    <br>
+    <ion-card>
+      <ion-icon name="alert" color="danger"></ion-icon>
+      <p>Recuerde revisar la información a publicar en el televisor público</p>
+    </ion-card>
+  </ion-row>
+  <br><br>
+  
+  <ion-fab right bottom >
+      <button ion-fab color="danger"><ion-icon name="arrow-dropleft"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab (click)="logout()"><ion-icon name="key"></ion-icon></button>
+        <button ion-fab (click)="gotoDevolver()"><ion-icon name="remove"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+
+</ion-content>
